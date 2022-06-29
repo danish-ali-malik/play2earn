@@ -1,0 +1,82 @@
+$enable-caret: false;
+
+// Fonts Fallback
+$typographic-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+// Fonts
+$body_font: 'Helvetica', 
+sans-serif,
+$typographic-font-family;
+$font_awesome: 'Font Awesome 5 Free';
+
+// Color pallets
+$transparent: rgba(0,0,0,0);
+$white: #fff;
+$black: #000;
+$dark-blue: #1C243E;
+$light-blue: #F1F5F9;
+$purple: #9a1bc0;
+$light-gray: #8D91A8;
+$dark-gray: #F8F8F8;
+$gray: #B8B8B8;
+$hard-gray: #6E6E6E;
+$dim-white: #F1F1F1;
+$green: #4EAF0A;
+$dim-black: #0f172a;
+
+
+
+$theme-colors: (
+    //   primary: $dark_cream,
+    //   secondary: $brown,
+    //   success: $green,
+    //   warning: $yellow,
+    //   danger: $orange,
+    ) !default;
+
+$colors: () !default;
+
+$colors: map-merge(( //
+        "white": $white,
+        "black": $black,
+        "dark-blue": $dark-blue,
+        "light-blue": $light-blue,
+        "purple": $purple,
+        "light-gray": $light-gray,
+        "dark-gray": $dark-gray,
+        "gray": $gray,
+        "hard-gray": $hard-gray,
+        "dim-white": $dim-white,
+        "dim-black": $dim-black,
+        "green": $green,
+        // "orange": $orange,
+    ),
+    $colors);
+
+$theme-colors: map-merge(( //
+        "white": $white,
+        "black": $black,
+        "dark-blue": $dark-blue,
+        "light-blue": $light-blue,
+        "purple": $purple,
+        "light-gray": $light-gray,
+        "dark-gray": $dark-gray,
+        "gray": $gray,
+        "hard-gray": $hard-gray,
+        "dim-white": $dim-white,
+        "dim-black": $dim-black,
+        "green": $green,
+    ),
+    $theme-colors);
+
+$grid-breakpoints: (xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    sd: 1380px,
+    xxl: 1600px,
+    xxxl: 1920px,
+    ld: 2570px,
+) !default;
+

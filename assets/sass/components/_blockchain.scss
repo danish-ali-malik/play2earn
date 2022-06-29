@@ -1,0 +1,40 @@
+.blockchain {
+    padding: 70px 0 100px;
+
+    @include media-breakpoint-down(md) {
+        padding: 28px 0 80px;
+    }
+
+    .title-top {
+        margin-bottom: 40px;
+    }
+
+    .blockchain-block {
+        border: 1px solid #707070;
+        border-radius: 4px;
+        padding: 29px 66px;
+        margin-bottom: 20px;
+
+        @include media-breakpoint-down(xl) {
+            padding: 20px;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 12px 13px;
+        }
+    }
+
+    .btn-wrapper {
+        margin-top: 36px;
+
+        .btn {
+            background-image: linear-gradient(to right, #BB47DE, #A209CF);
+            color: $white;
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: bold;
+            padding: 10px 23px;
+            border-radius: 8px;
+        }
+    }
+}

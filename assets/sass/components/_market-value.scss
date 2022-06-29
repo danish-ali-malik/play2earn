@@ -1,0 +1,33 @@
+.market-value {
+    padding-top: 48px;
+
+    &__row {
+        border-top: 1px solid #707070;
+        border-bottom: 1px solid #707070;
+        padding: 3px 0;
+    }
+
+    &__block {
+        padding-block: 39px;
+        padding-right: 15px;
+
+        @include media-breakpoint-down(md) {
+            padding-right: 0;
+            padding-block: 20px;
+        }
+
+        h4 {
+            margin-bottom: 16px;
+            color: $dark-blue;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 16px;
+                line-height: 1;
+            }
+        }
+
+        h3 {
+            line-height: 1.16;
+        }
+    }
+}

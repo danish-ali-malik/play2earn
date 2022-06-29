@@ -1,0 +1,22 @@
+/*!
+Theme Name: p2e-academy
+Theme URI: http://underscores.me/
+Author: Danish Ali Malik
+*/
+.nav-previous, .nav-next {
+	display: none;
+}
+.blog {
+	padding: 25px 0;
+}
+
+.blog-detail__image {
+    margin: 0 0 80px 0 !important;
+}
+
+.page-title {
+    padding: 70px 0 0 !important;
+}
+.title-top {
+	margin-bottom: 40px;
+}

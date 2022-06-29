@@ -1,0 +1,53 @@
+.site-footer {
+    padding: 25px 0;
+
+    &__wrapper {
+        width: 100%;
+        max-width: 620px;
+        margin: 0 auto;
+        padding: 0 15px;
+        text-align: center;
+
+        @include media-breakpoint-down(xs) {
+            padding-inline: 10px;
+        }
+
+        ul {
+            margin-top: 20px;
+
+            li {
+                @include not-last {
+                    margin-right: 5px;
+                }
+
+                a {
+                    font-size: 18px;
+                    line-height: 28px;
+                    letter-spacing: .3px;
+                    @extend .transition;
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: 15px;
+                    }
+
+                    @include media-breakpoint-down(xs) {
+                        font-size: 9px;
+                    }
+
+                    @include hover {
+                        color: $purple;
+                    }
+                }
+            }
+        }
+
+        .copy-right {
+            margin-top: 40px;
+
+            @include media-breakpoint-down(xs) {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+

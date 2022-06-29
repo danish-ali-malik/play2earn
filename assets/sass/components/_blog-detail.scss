@@ -1,0 +1,124 @@
+.blog-detail {
+    padding: 100px 0 80px;
+
+    .container {
+        max-width: 760px;
+    }
+
+    &__title {
+        margin-bottom: 80px;
+
+        .blog-cta {
+            color: #0f172a;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .2px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            color: #0a0b0c;
+            font-size: 47px;
+            line-height: 1.15;
+            font-family: inherit;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.015em;
+        }
+
+        .title-bottom {
+            position: relative;
+            padding-left: 58px;
+            font-size: 16px;
+            line-height: 1.4;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 46px;
+                height: 46px;
+                border-radius: 50%;
+                object-fit: cover;
+                transform: translateY(-50%);
+            }
+
+            strong {
+                font-weight: 600;
+            }
+
+            ul {
+                li {
+                    position: relative;
+                    font-size: 14px;
+                    color: #738a94;
+                }
+            }
+        }
+    }
+
+    &__image {
+        margin-bottom: 80px;
+
+        @include media-breakpoint-up(xl) {
+            margin-left: -234px;
+            margin-right: -234px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-left: -100px;
+            margin-right: -100px;
+        }
+    }
+
+    &__content {
+        p {
+            color: #35373a;
+            font-size: 21px;
+            line-height: 33px;
+            font-weight: 400;
+
+            @include not-last {
+                margin-bottom: 40px;
+            }
+
+            .aligncenter {
+                display: block;
+                margin: 5px auto;
+            }
+        }
+
+        h2,
+        h3 {
+            font-size: 28px;
+            line-height: 33px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        h3 {
+            @include media-breakpoint-down(md) {
+                font-size: 23px;
+            }
+        }
+
+        ol {
+            margin-bottom: 40px;
+            padding-left: 32px;
+
+            li {
+                color: inherit;
+                font-size: 21px;
+                line-height: 33px;
+                font-weight: 400;
+                list-style: auto;
+
+            }
+        }
+
+        a {
+            text-decoration: underline !important;
+            word-break: break-word;
+        }
+    }
+}

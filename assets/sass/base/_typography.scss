@@ -1,0 +1,154 @@
+.font-light {
+    font-weight: 300;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-demi {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-overflow {
+    @extend .text-overflow;
+}
+
+a {
+    @extend .transition;
+
+    &:hover {}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1,
+.h1 {
+    font-size: 35px;
+    line-height: 61px;
+    letter-spacing: .2px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 28px;
+        line-height: 48px;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 26px;
+        line-height: 41px;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 36px;
+    line-height: 42px;
+
+    @include media-breakpoint-down(md) {
+        font-size: 26px;
+        line-height: 35px;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 24px;
+    line-height: 41px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 16px;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+h5,
+.h5 {}
+
+h6,
+.h6 {}
+
+p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: .2px;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.copy-md {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.copy-sm {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.btn {
+    border-radius: 0;
+    box-shadow: none !important;
+    outline: none !important;
+    border: none;
+    @extend .transition;
+    font-size: 18px;
+    line-height: 1.1;
+    @extend .font-bold;
+    border-radius: 5px;
+    padding: 18px 22px;
+    @extend .text-uppercase;
+
+    &-reset {
+        padding: 0;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+}

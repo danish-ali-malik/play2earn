@@ -1,0 +1,4 @@
+[26-May-2022 10:12:51 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/playopkv/public_html/staging/wp-content/themes/p2e-academy/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/playopkv/public_html/staging/wp-content/themes/p2e-academy/index.php on line 15

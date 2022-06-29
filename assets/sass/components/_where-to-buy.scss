@@ -1,0 +1,170 @@
+.where-to-buy {
+    padding: 80px 0;
+
+    @include media-breakpoint-down(md) {
+        padding: 28px 0;
+    }
+
+    .title-top {
+        margin-bottom: 98px;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .table {
+        @include media-breakpoint-down(md) {
+            min-width: 970px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            min-width: 720px;
+        }
+
+        thead {
+            th {
+                border-top: none;
+                border-bottom-width: 1px;
+            }
+        }
+
+        th,
+        td {
+            vertical-align: middle;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 11px;
+                line-height: 20px;
+            }
+        }
+
+        tbody {
+            td {
+                svg {
+                    @include media-breakpoint-down(sm) {
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &--alt {
+        padding: 80px 0 68px;
+
+        .bitcoin-dropdown {
+            margin-bottom: 75px;
+
+            .dropdown {
+                @include not-last {
+                    margin-right: 15px;
+                }
+
+                .btn {
+                    border: 1px solid $black;
+                    padding: 7px 16px;
+                    font-weight: 400;
+                    border-radius: 4px;
+                    text-transform: capitalize !important;
+
+                    svg {
+                        @extend .transition;
+                    }
+                }
+
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: $white;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                    width: 100%;
+                }
+
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    display: block;
+                }
+
+
+                @include hover {
+                    .dropdown-content {
+                        display: block;
+                    }
+
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .content-bottom {
+            margin-top: 115px;
+            max-width: 85%;
+            margin-inline: auto;
+
+            @include media-breakpoint-down(md) {
+                margin-top: 30px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                max-width: 100%;
+            }
+
+            p {
+                @include media-breakpoint-down(sm) {
+                    font-size: 14px;
+                }
+            }
+
+            .dropdown {
+                @include not-last {
+                    margin-right: 15px;
+                }
+
+                .btn {
+                    background-color: $dim-white;
+                    font-size: 16px;
+                    line-height: 25px;
+                    padding: 6px 13px;
+                    font-weight: 400;
+                    border-radius: 4px;
+
+                    svg {
+                        @extend .transition;
+                    }
+                }
+
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: $white;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                    width: 100%;
+
+                    a {
+                        color: black;
+                        padding: 12px 16px;
+                        display: block;
+                    }
+                }
+
+                @include hover {
+                    .dropdown-content {
+                        display: block;
+                    }
+
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+}

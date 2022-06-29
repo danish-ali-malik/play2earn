@@ -1,0 +1,91 @@
+.related-products {
+    padding-block: 40px;
+
+    .title-block {
+        margin-bottom: 90px;
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            @extend .font-bold;
+            text-transform: capitalize;
+            letter-spacing: .08em;
+        }
+    }
+
+    &__block {
+        margin-block: 24px;
+        border: 1px solid #707070;
+        border-radius: 4px;
+        padding: 20px;
+
+        @include media-breakpoint-down(sm) {
+            margin-block: 12px;
+            padding: 16px;
+            padding-bottom: 20px;
+        }
+
+        &--inner {
+            @extend .flex-v-center;
+            width: 100%;
+            max-width: 250px;
+            margin-inline: auto;
+            min-height: 115px;
+
+            @include media-breakpoint-down(sm) {
+                flex-direction: column;
+            }
+
+            .image-wrapper {
+                width: 100%;
+                border-radius: 50px;
+                max-width: 80px;
+                min-width: 80px;
+                min-height: 80px;
+                max-height: 80px;
+                overflow: hidden;
+                margin-right: 20px;
+
+                @include media-breakpoint-down(sm) {
+                    max-width: 64px;
+                    min-width: 64px;
+                    min-height: 64px;
+                    max-height: 64px;
+                    margin-right: 0;
+                    margin-bottom: 5px;
+                }
+            }
+
+            .game-meta {
+                h2 {
+                    font-size: 34px;
+                    letter-spacing: .08em;
+                    text-transform: capitalize;
+                    position: relative;
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: 18px;
+                    }
+
+                    &::after {
+                        content: url(../images/icon-ethereum.svg);
+                        font-size: 0;
+                        line-height: 0;
+                        position: absolute;
+                        left: 0;
+                        bottom: -40px;
+                        transform: scale(1.5);
+
+                        @include media-breakpoint-down(sm) {
+                            bottom: -20px;
+                            left: 50%;
+                            transform: scale(1.1) translateX(-50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

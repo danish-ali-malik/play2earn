@@ -1,0 +1,41 @@
+.page-title {
+    padding: 25px 0;
+
+    .container {
+        @include media-breakpoint-down(sm) {
+            max-width: 540px;
+        }
+    }
+
+    .breadcrumb {
+        background: none;
+        margin-bottom: 30px;
+        color: #334155;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        padding: 0;
+
+        span,
+        a {
+            display: inline-block;
+            vertical-align: middle;
+            color: inherit;
+        }
+
+        .separator {
+            width: 16px;
+            height: 16px;
+            background-image: url(../images/arrow-right--blog.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+
+    h1 {
+        color: #0f172a;
+        font-size: 40px;
+        line-height: 48px;
+    }
+}

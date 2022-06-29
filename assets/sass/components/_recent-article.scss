@@ -1,0 +1,32 @@
+.recent-article {
+    padding: 85px 0 115px;
+
+    @include media-breakpoint-down(md) {
+        padding: 40px 0 80px;
+    }
+
+    .title-top {
+        margin-bottom: 60px;
+    }
+
+    .article-block {
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+
+        .image-thumbnail {
+            .image-ratio {
+                padding-top: 59%;
+
+                img {
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        .article-meta {
+            margin-top: 50px;
+        }
+    }
+}

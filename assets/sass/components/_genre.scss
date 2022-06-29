@@ -1,0 +1,107 @@
+.genre {
+    padding: 56px 0 44px;
+
+    @include media-breakpoint-down(md) {
+        padding: 28px 0 26px;
+    }
+
+    .title-top {
+        margin-bottom: 38px;
+
+        @include media-breakpoint-down(sm) {
+            padding-inline: 10px;
+        }
+
+        p {
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+                max-width: 260px;
+            }
+        }
+    }
+
+    .genre-block {
+        margin-bottom: 40px;
+        border-radius: 4px;
+        position: relative;
+        padding: 8px 35px;
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 400;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: 1px solid $purple;
+            border-radius: 4px;
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            z-index: -1;
+
+            @include media-breakpoint-down(md) {
+                right: -5px;
+            }
+        }
+    }
+
+    .dropdown {
+        @include not-last {
+            margin-right: 15px;
+            margin-bottom: 40px;
+        }
+
+        @include hover {
+            .dropdown-content {
+                display: block;
+            }
+
+            .genre-block {
+                &::after {
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+
+        .dropdown-btn {
+            @include hover {
+                background-color: $dim-white  !important;
+            }
+
+            &::after {
+                content: url(/assets/images/icon-dropdown.svg);
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 35px;
+                font-size: 0;
+                line-height: 0;
+                @extend .transition;
+            }
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: $white;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 100%;
+            margin-top: -40px;
+
+            a {
+                font-size: 18px;
+                line-height: 28px;
+                color: $dark-blue;
+                padding: 12px 16px;
+                display: block;
+
+                @include hover {
+                    background-color: $dark-gray;
+                }
+            }
+        }
+    }
+}

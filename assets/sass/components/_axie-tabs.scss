@@ -1,0 +1,62 @@
+.axie-tabs {
+    padding-block: 52px;
+
+    &-wrapper {
+        .nav-tabs {
+            border: none;
+            padding-bottom: 50px;
+
+            @include media-breakpoint-down(md) {
+                padding-bottom: 20px;
+            }
+
+            .nav-item {
+                @include media-breakpoint-down(md) {
+                    margin-block: 15px;
+                }
+
+                .nav-link {
+                    border: none;
+                    font-size: 14px;
+                    line-height: 1.14;
+                    letter-spacing: .08em;
+                    padding: 11px;
+                    color: $black;
+                    font-weight: normal;
+                    border-radius: 4px;
+
+                    &:hover,
+                    &.active {
+                        color: inherit;
+                        background-color: $purple;
+                        border: none;
+                        color: $white;
+                    }
+                }
+
+                @include not-last {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+
+    &__content {
+        padding-top: 30px;
+
+        @include media-breakpoint-down(md) {
+            padding-top: 0;
+        }
+
+        .content-block {
+            h2 {
+                letter-spacing: .08em;
+                margin-bottom: 20px;
+            }
+
+            p {
+                letter-spacing: .025em;
+            }
+        }
+    }
+}
